@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir</title>
+</head>
+
+<body>
+    <form method="post" action="confirmation" enctype="multipart/form-data">
+        <p>
+            <input type="text" name="nom" id="" placeholder="Nom" class="">
+        </p>
+        <p>
+            <input type="text" name="Prenom" id="" placeholder="Preom" class="">
+        </p>
+        <p>
+            <select name="pays" id="">
+                <option value="guinee">Guinee</option>
+            </select>
+        </p>
+        <p>
+            <select name="auteur" id="">
+                <option value="mamadou">Mamadou Bah</option>
+            </select>
+        </p>
+        <p>
+            <label for="sexem">Masculin</label>
+            <input type="radio" name="genre" id="sexem" value="M">
+        </p>
+        <p>
+            <label for="sexef">Feminin</label>
+            <input type="radio" name="genre" id="sexef" value="F">
+        </p>
+        <p>
+            <input type="file" name="cv" id="" accept=".pdf" placeholder="Cv">
+        </p>
+        <p>
+            <input type="file" name="image" id="" accept=".png,.jpeg,.jpg" placeholder="image" multiple>
+        </p>
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+    </form>
+</body>
+
+</html>

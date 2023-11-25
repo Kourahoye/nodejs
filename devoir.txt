@@ -1,0 +1,14 @@
+Devoir NODEJS
+
+Créer un formulaire qui dispose les champs suivants: 
+-Nom
+-Prenom
+-Genre(case à cocher)
+-Pays(Lister tous les pays du monde ) 
+-Auteurs (https://openlibrary.org/authors/OL33421A.json) (utilisez axios )
+-CV (type fichier (exclusivement en PDF))
+-Images (Type images(jpg,png,...) avec possibilité de sélectionner plusieurs images à la fois)
+
+le bouton envoyer permettra d'envoyer les CV et les images dans le serveur
+
+Date limite = Lundi à 23h59 mn
