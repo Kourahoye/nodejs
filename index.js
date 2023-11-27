@@ -33,16 +33,13 @@ app.post('/confirmation', upload.fields([{ name: 'cv', maxCount: 1 }, { name: 'i
     const imagePaths = [];
     imageFiles.forEach((file) => {
         const imagePath = path.join(imageDestination, file.originalname);
-        file.mv(imagePath, (err) => {
-            if (err) {
-                console.error(err);
-                return res.status(500).json({ message: 'Une erreur s\'est produite lors du téléchargement des images.' });
-            }
-        });
         imagePaths.push(imagePath);
     });
 
-    res.send('Formulaire soumis avec succès !');
+    // Faites quelque chose avec les données du formulaire et les chemins des fichiers téléchargés
+    // Par exemple, enregistrez les informations dans une base de données en utilisant les chemins des fichiers
+
+    res.json({ message: 'Formulaire soumis avec succès !' });
 });
 // Démarrer le serveur
 app.listen(3000, () => {
