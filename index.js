@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "public/index.html"))
+    res.sendFile(path.join(__dirname, "views/index.html"))
 })
 
 // Gérer l'envoi du formulaire
@@ -42,10 +42,7 @@ app.post('/confirmation', upload.fields([{ name: 'cv', maxCount: 1 }, { name: 'i
         imagePaths.push(imagePath);
     });
 
-    // Faites quelque chose avec les données du formulaire et les chemins des fichiers téléchargés
-    // Par exemple, enregistrez les informations dans une base de données en utilisant les chemins des fichiers
-
-    res.json({ message: 'Formulaire soumis avec succès !' });
+    res.send('Formulaire soumis avec succès !');
 });
 // Démarrer le serveur
 app.listen(3000, () => {
